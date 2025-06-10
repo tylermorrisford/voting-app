@@ -1,0 +1,35 @@
+// Q: What should be included in a .gitignore file?
+
+# Node.js modules
+node_modules/
+
+# Build artifacts
+dist/
+build/
+out/
+
+# data directory
+data/
+
+# Package manager lock files (if you don't intend to track them)
+package-lock.json
+pnpm-lock.yaml
+
+# Environment files
+.env
+.env.*
+*.local
+
+# IDE configuration files
+.idea/
+.vscode/
+
+# System files
+.DS_Store
+
+# Log files
+*.log
+
+# Temporary files
+tmp/
+temp/

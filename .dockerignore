@@ -1,0 +1,12 @@
+# .dockerignore
+node_modules
+client/node_modules
+client/dist
+.git
+.gitignore
+Dockerfile
+docker-compose.yml
+# Exclude the database file itself from the image, as it's persistent data
+# and will be mounted via a volume.
+votes.db
+data/

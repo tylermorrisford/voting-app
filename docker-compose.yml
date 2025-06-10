@@ -1,0 +1,14 @@
+version: '3.8' # Docker Compose file format version
+
+services:
+  web:
+    build:
+      context: . # Build from the current directory (where Dockerfile is located)
+      dockerfile: Dockerfile # Specify the Dockerfile to use
+    ports:
+      - "3005:3005" # Map host port 3000 to container port 3000
+    volumes:
+      # Mount a local directory for persistent database storage
+      # This means the 'data' folder in your project root will be synced
+      # with the '/app/data' folder inside the container.
+      - ./data:/app/data
